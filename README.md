@@ -17,5 +17,6 @@ I study the variations in the main centroid, which is the average vector embeddi
 Each month, to identify innovation trends I calculate the main centroid for the past 60 and 12 months and calculate their difference.
 
 Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding, and the centroids over the past 12 and 60 months are shown in dark vectors as averages of patent embeddings over the past 12 and 60 months. The Δ(12-60) vector represents the direction in embedding space where innovation concentration is growing.   
+
 <img src="https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357" alt="embed_space" width="400"/>
 
