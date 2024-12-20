@@ -13,7 +13,7 @@ embeddings = HuggingFaceEmbeddings(model_name="all-mpnet-base-v2")
 text_splitter = SemanticChunker(embeddings)
 
 # all_g_patents is the .csv file containing all the granted patents' abstracts owned by US public companies from 1970-2024
-# all_g_patents is available in this repository (Original data obtained from PatentsView)
+# all_g_patents is available here 'https://drive.google.com/file/d/1rASRTCKwMOoT6ec0HgiBra8M7wphnkA1/view?usp=sharing' (Original data obtained from PatentsView)
 df = pd.read_csv('./all_g_patents.csv')
 
 years = df['year'].unique()
