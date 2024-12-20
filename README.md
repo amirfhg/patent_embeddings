@@ -8,4 +8,5 @@ Each direction in embedding space corresponds to a specific domain of technology
 The main idea here is that variations in the direction of centroids (vectors representing the average of vector embeddings over a cluster of patents) in the embedding space point to the newly emerging innovation hotspots. 
 
 
-![embed_space](https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357)
+<img src="https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357" alt="embed_space" width="400"/>
+
