@@ -11,7 +11,7 @@ Any direction in embedding space may correspond to a specific domain of innovati
 ![pca_a](https://github.com/user-attachments/assets/9bb18ea6-d950-4e3f-b865-c2c5823945bb)
 
 
-# Innovation Trends and Patent Value
+# Innovation Trends 
 The main idea is that variations in the direction of centroids (vectors representing the average of vector embeddings over patent clusters) in the embedding space point to the newly emerging areas of innovation. 
 
 I study the variations in the main centroid, which is the average vector embeddings of all patents filed during a period. A more in-depth analysis can first cluster patents and study centroids associated with each cluster separately over time. 
@@ -21,3 +21,4 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 
 <img src="https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357" alt="embed_space" width="400"/>
 
+# Retrieval-augmented generation (RAG) - Chat with Patents 
