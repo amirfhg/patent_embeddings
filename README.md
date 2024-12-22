@@ -21,4 +21,5 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 
 <img src="https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357" alt="embed_space" width="400"/>
 
-# Chat with Patents Using RAG
+# Chat with Patents (RAG)
+
