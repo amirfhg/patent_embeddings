@@ -53,7 +53,7 @@ for y in years:
       # Append the embedding to the embeddings list
       embeddings_list_.append(embedding)
 
-    # Generate IDs for each embedding
+    # Generate IDs for each embedding (this id includes permno (public firm identifier who owns the patent) + patent id + chunk index)
     ids = [str(permno_number) + "_" + str(id_number) + "_" + str(i) for i in range(len(docs))]
 
     # Append embeddings and ids to the respective lists
