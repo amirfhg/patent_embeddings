@@ -11,7 +11,8 @@ nltk.download('stopwords', quiet=True)
 from nltk.corpus import stopwords
 from nltk.util import ngrams
 from collections import Counter
-
+# all_g_patents is the .csv file containing all the granted patents' abstracts owned by US public companies from 1970-2024
+# all_g_patents is available here 'https://drive.google.com/file/d/1rASRTCKwMOoT6ec0HgiBra8M7wphnkA1/view?usp=sharing' (Original data obtained from PatentsView)
 df = pd.read_csv('./all_g_patents.csv')
 df['patent_id'] = df['patent_id'].astype(str)
 
@@ -28,18 +29,15 @@ def clean_and_tokenize(text):
     tokens = [t for t in tokens if t not in stop_words]
     return tokens
 
-# Make sure you already have a DataFrame named df that contains
-# columns at least ["patent_id", "patent_abstract"].
-# Example: df = pd.read_csv("my_patent_abstracts.csv")
-
 final_results = pd.DataFrame()
 years = list(range(1970, 2025))
 
 for i in range(0, len(years), 5):
     five_years = years[i:i + 5]
 
-    # Initialize an empty DataFrame to gather data for the current year
-    # (re-initialized each time through this loop)
+    # Initialize an empty DataFrame to gather patent embedding data for the current year
+    # Remember patent embedding data was created and saved as .zip files for each year in vectorize_patent_abstract.py 
+    
     temp = pd.DataFrame()
 
     for year in five_years:
