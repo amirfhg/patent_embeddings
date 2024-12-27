@@ -17,6 +17,6 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 
 <img src="https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357" alt="embed_space" width="400"/>
 
-# Report Innovation Trends (using RAG)
+# Breakdown Innovation Trends (using RAG)
 
 # Patent Value
