@@ -7,10 +7,6 @@ The result is a vector database of hundreds of thousands of patents in a 768-dim
 
 Any direction in embedding space may correspond to a specific domain of innovation (although not all dimensions may be interpretable). 
 
-# Principal Component Analysis (PCA)
-![pca_a](https://github.com/user-attachments/assets/9bb18ea6-d950-4e3f-b865-c2c5823945bb)
-
-
 # Innovation Trends 
 The main idea is that variations in the direction of centroids (vectors representing the average of vector embeddings over patent clusters) in the embedding space point to the newly emerging areas of innovation. 
 
