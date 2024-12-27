@@ -3,7 +3,9 @@ Track innovation trends and technological breakthroughs through patent embedding
 
 # Methodology 
 I use sentence transformers (HuggingFace model "all-mpnet-base-v2") to vectorize the title and abstract of granted patents to US public companies.
-The result is a vector database of hundreds of thousands of patents in a 768-dimensional embedding space. 'vectorize_patent_abstract.py' step by step goes through vectorizing each patent's abstract in the sample. 
+The result is a vector database of hundreds of thousands of patents in a 768-dimensional embedding space. 
+
+'vectorize_patent_abstract.py' step by step goes through vectorizing each patent's abstract in the sample. 
 
 Any direction in embedding space may correspond to a specific domain of innovation (although not all dimensions may be interpretable). 
 
@@ -18,7 +20,9 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 <img src="https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357" alt="embed_space" width="400"/>
 
 # Breakdown of Innovation Trends (using RAG)
-Innovation trends are vectors that point in a direction in our embedding space. This vector may refer to a set of technological domains that can be revealed using the most aligned patents with it. For example, we can describe the innovation trend in month 't' by finding the top 5% of patents regarding cosine similarity and prompt LLMs to read, identify, and interpret the technological domain that is receiving the most attention according to innovation trend in month 't'. 'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG to prompt gpt-4o to produce innovation trend reports based on those patents. 
+Innovation trends are vectors that point in a direction in our embedding space. This vector may refer to a set of technological domains that can be revealed using the most aligned patents with it. For example, we can describe the innovation trend in month 't' by finding the top 5% of patents regarding cosine similarity and prompt LLMs to read, identify, and interpret the technological domain that is receiving the most attention according to innovation trend in month 't'.
+
+'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG to prompt gpt-4o to produce innovation trend reports based on those patents. 
 
 
 # Patent Value
