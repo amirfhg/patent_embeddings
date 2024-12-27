@@ -22,6 +22,12 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 # Breakdown of Innovation Trends (using RAG)
 Innovation trends are vectors that point in a direction in our embedding space. This vector may refer to a set of technological domains that can be revealed using the most aligned patents with it. For example, we can describe the innovation trend in month 't' by finding the top 5% of patents regarding cosine similarity and prompt LLMs to read, identify, and interpret the technological domain that is receiving the most attention according to innovation trend in month 't'.
 
-'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG to prompt gpt-4o to produce innovation trend reports based on those patents. 
+'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. Below is the example of brief reports for the month of January 2023:
+
+""
+
+In addition, one can rely on LLMs to identify innovation trends as a complement to the methodology discussed above.  To do so, I first collect the innovation reports for multiple months during a period (e.g. Jan-Dec 2023) produced by gpt-4o. Then I prompt the model to read the reports and describe possible innovation themes emerging over that period. This way the model's response benefits from the content of carefully selected patents -- among hundreds of thousands of patents -- based on our methodology that aims to identify emerging innovation hotspots. Below is an example of such report for the year 2023: 
+
+""
 
 # Patent Value
