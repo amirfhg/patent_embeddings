@@ -20,9 +20,9 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 <img src="https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357" alt="embed_space" width="400"/>
 
 # Breakdown of Innovation Trends (using Retrieval-Augmented Generation (RAG))
-Innovation trends are vectors that point in a direction in our embedding space. This vector may refer to a set of technological domains that can be revealed using the most aligned patents with it. For example, we can describe the innovation trend in month 't' by finding the top 5% of patents in cosine similarity $$\[
+Innovation trends are vectors that point in a direction in our embedding space. This vector may refer to a set of technological domains that can be revealed using the most aligned patents with it. For example, we can describe the innovation trend in month 't' by finding the top 5% of patents by cosine similarity $$\[
 \cos(\vec{\text{patent}}, \vec{Delta_{12-60}})
-\]$$ and prompt LLMs to read, identify, and interpret the technological domain that is receiving the most attention according to innovation trends up to month $$t$$.
+\]$$. We then prompt LLMs to read, identify, and retrieve the name and description of technological domains that receive the most attention according to $\Delta_{12-60}$.
 
 'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. Below is the example of brief reports for the month of January 2023:
 
