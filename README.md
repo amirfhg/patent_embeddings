@@ -30,4 +30,4 @@ In addition, one can rely on LLMs to identify innovation trends as a complement 
 
 ""
 
-# Patent Value
+# Innovation Trend & Patent Value
