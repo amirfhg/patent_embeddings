@@ -17,6 +17,8 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 
 <img src="https://github.com/user-attachments/assets/da2b3832-c26f-4b20-b709-3efd9a4be357" alt="embed_space" width="400"/>
 
-# Breakdown Innovation Trends (using RAG)
+# Breakdown of Innovation Trends (using RAG)
+Innovation trends are vectors that point in a direction in our embedding space. This vector may refer to a set of technological domains that can be revealed using the most aligned patents with it. For example, we can describe the innovation trend in month 't' by finding the top 5% of patents regarding cosine similarity and prompt LLMs to read, identify, and interpret the technological domain that is receiving the most attention according to innovation trend in month 't'. 
+
 
 # Patent Value
