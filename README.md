@@ -3,7 +3,7 @@ Track innovation trends and technological breakthroughs through patent embedding
 
 # Methodology 
 I use sentence transformers (HuggingFace model "all-mpnet-base-v2") to vectorize the title and abstract of granted patents to US public companies.
-The result is a vector database of hundreds of thousands of patents in a 768-dimensional embedding space. 
+The result is a vector database of hundreds of thousands of patents in a 768-dimensional embedding space. 'vectorize_patent_abstract.py' step by step goes through vectorizing each patent's abstract in the sample. 
 
 Any direction in embedding space may correspond to a specific domain of innovation (although not all dimensions may be interpretable). 
 
