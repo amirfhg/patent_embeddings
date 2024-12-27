@@ -19,4 +19,4 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 
 # Interpret Innovation Trends (using RAG)
 
-# Patent Alignment with Trends 
+# Patent Alignment with Innovation Trends 
