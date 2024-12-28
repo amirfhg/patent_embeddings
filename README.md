@@ -38,3 +38,4 @@ To implement this, I first collect the innovation reports for multiple months du
 ""
 
 # Innovation Trend & Patent Value
+
