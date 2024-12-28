@@ -1,5 +1,5 @@
 # Objective
-\roman{1}. Track innovation trends and technological breakthroughs through patent embedding analysis. 
+$$\roman{1}$$. Track innovation trends and technological breakthroughs through patent embedding analysis. 
 2. Establish that there is a link between innovation trends and patent value in the sample. 
 
 # Embedding Technique 
