@@ -38,8 +38,7 @@ To implement this, I first collect the innovation reports for multiple months du
 ""
 
 # Innovation Trend & Patent Value
-The study *Technological Innovation, Resource Allocation, and Growth* by Kogan, Papanikolaou, Seru, and Stoffman (2017) uses the initial market reaction to the news of the patent grant as a proxy for future patent value.  
-
+The study *Technological Innovation, Resource Allocation, and Growth* by Kogan, Papanikolaou, Seru, and Stoffman (2017) proposes a measure of patent economic value that relies on the initial market response to the news of the patent grant. They argue that investors are forward-looking and their response to the news of the patent grant provides an estimation of the private value of the patent. The market response is calculated by the movements in stock prices following the news of patent grant. Specifically, the movement is measured as a stock's turnover which is the ratio of its trading activity to its market cap. A greater stock turnover following a patent grant indicates that the news holds important information for the market.
 
 ### References
 
