@@ -1,5 +1,6 @@
 # Objective
-Track innovation trends and technological breakthroughs through patent embedding analysis. Patent embeddings are also used to measure the value of patents.
+1. Track innovation trends and technological breakthroughs through patent embedding analysis. 
+2. Establish that there is a link between innovation trends and patent value in the sample. 
 
 # Embedding Technique 
 I use sentence transformers (HuggingFace model "all-mpnet-base-v2") to vectorize the title and abstract of US public companies granted patents. 
