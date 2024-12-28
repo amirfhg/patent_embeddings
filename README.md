@@ -2,8 +2,8 @@
 Track innovation trends and technological breakthroughs through patent embedding analysis. Patent embeddings are also used to measure the value of patents.
 
 # Embedding Technique 
-I use sentence transformers (HuggingFace model "all-mpnet-base-v2") to vectorize the title and abstract of granted patents to US public companies.
-The result is a vector database of hundreds of thousands of patents in a 768-dimensional embedding space. 
+I use sentence transformers (HuggingFace model "all-mpnet-base-v2") to vectorize the title and abstract of US public companies granted patents. 
+The result is a vector database of hundreds of thousands of patents, each being a 768-dimensional vector in embedding space. 
 
 'vectorize_patent_abstract.py' step by step goes through vectorizing each patent's abstract in the sample. 
 
