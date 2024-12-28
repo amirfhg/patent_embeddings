@@ -6,7 +6,7 @@
 I use sentence transformers (HuggingFace model "all-mpnet-base-v2") to vectorize the title and abstract of US public companies granted patents. 
 The result is a vector database of hundreds of thousands of patents, each being a 768-dimensional vector in embedding space. 
 
-'vectorize_patent_abstract.py' step by step goes through vectorizing each patent's abstract in the sample. 
+The code in 'vectorize_patent_abstract.py' shows how we vectorize patent  abstracts in the sample. 
 
 Directions in embedding space can correspond to a specific domain of innovation (although not all dimensions may be interpretable). 
 
@@ -25,7 +25,7 @@ So far we have constructed innovation trends which are vectors in our embedding 
 \cos(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$. To automate reading the patents, we prompt LLMs to to do so. LLMs retrieve the name and description of technological domains mentioned in most similar patents to $$\vec{\Delta_{12-60}}$$. This is essentially a RAG method that rely on temporal trends in vector embedding space to retrieve pieces of context (patent) with most relevance to emerging trends.  
 
-'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. Below is the example of brief reports for the month of January 2023:
+The code in 'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. Below is the example of brief reports for the month of January 2023:
 
 ""
 
