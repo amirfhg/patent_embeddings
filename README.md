@@ -7,13 +7,10 @@ The result is a vector database of hundreds of thousands of patents in a 768-dim
 
 'vectorize_patent_abstract.py' step by step goes through vectorizing each patent's abstract in the sample. 
 
-Any direction in embedding space may correspond to a specific domain of innovation (although not all dimensions may be interpretable). 
+Directions in embedding space can correspond to a specific domain of innovation (although not all dimensions may be interpretable). 
 
 # Innovation Trends 
-The main idea is that variations in the direction of centroids (vectors representing the average of vector embeddings over patent clusters) in the embedding space point to the newly emerging areas of innovation. 
-
-I study the variations in the main centroid, which is the average vector embeddings of all patents filed during a period. A more in-depth analysis can first cluster patents and study centroids associated with each cluster separately over time. 
-Each month, to identify innovation trends I calculate the main centroid for the past 60 and 12 months and calculate their difference.
+The main idea is that the variations in the direction of centroids -- vectors representing the average of patent vector embeddings -- over time can reveal the newly emerging areas of innovation. $$centroid_t$$ is the vector that is the average of vector embeddings of patents filed in the last 't' months. I study the variations in this centroid over different periods to identify the changes in the theme of patents filed over time. A more in-depth analysis can first cluster patents (e.g. by industry, sector) and study centroids associated with each cluster separately over time. To identify monthly innovation trends, I calculate the difference between $$centroid_12$$ and $$centroid_60$$, representing the average embeddings in the past 12 and 60 months. These values are arbitrary but the idea is that $$centroid_12$$ represents a more recent set of patents in the innovation space compared to $$centroid_60$$ and the difference between the two reveals the dimensions/direction that receive more attention in the embedding space. I produce the results with other periods besides 12 and 60 months to ensure the validity of my methodology. 
 
 Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding, and the centroids over the past 12 and 60 months are shown in dark vectors as averages of patent embeddings over the past 12 and 60 months. The vector $\Delta_{12-60}$ represents the direction in embedding space where innovation concentration is growing.   
 
