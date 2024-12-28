@@ -32,7 +32,7 @@ The code in 'innovation_trend.py' implements this idea by first calculating inno
 
 ""
 
-Alternatively, one can rely on LLM's ability to read patents and identify innovation trends as a complement to the methodology discussed above. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on our methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering our 95% of less aligned (relevant) patents based on $$\[
+Alternatively, one can rely on LLM's ability to read patents and identify innovation trends as a complement to the methodology discussed above. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on my methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering out 95% of less aligned (relevant) patents based on $$\[
 \cos(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$. This reduces the noise and improves the relevance and interpretability in LLM's response.
 
