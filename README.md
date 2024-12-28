@@ -38,4 +38,12 @@ To implement this, I first collect the innovation reports for multiple months du
 ""
 
 # Innovation Trend & Patent Value
+The study *Technological Innovation, Resource Allocation, and Growth* by Kogan, Papanikolaou, Seru, and Stoffman (2017) uses the initial market reaction to the news of the patent grant as a proxy for future patent value.  
 
+
+### References
+
+Kogan, Leonid, Papanikolaou, Dimitris, Seru, Amit, and Stoffman, Noah. (2017). 
+"Technological Innovation, Resource Allocation, and Growth." 
+*The Quarterly Journal of Economics*, 132(2), 665–712. 
+Oxford Academic.
