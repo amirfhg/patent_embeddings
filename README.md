@@ -33,7 +33,7 @@ The code in 'innovation_trend.py' implements this idea by first calculating inno
 ""
 
 Alternatively, one can rely on LLM's ability to read patents and identify innovation trends as a complement to the methodology discussed above. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on my methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering out 95% of less aligned (relevant) patents based on $$\[
-\cos(\vec{\text{patent}}, \vec{\Delta_{12-60}})
+Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$. This reduces the noise and improves the relevance and interpretability in LLM's response.
 
 To implement this, I first collect the innovation reports for multiple months during a period (e.g. Jan-Dec 2023) produced by gpt-4o. Then I prompt the model to read the reports and describe possible innovation themes emerging over that period. Below is an example of such report for the year 2023: 
