@@ -19,7 +19,7 @@ To identify monthly innovation trends, I calculate the difference between $$\vec
 Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding $$\vec{patent}$$, and $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$ are shown in dark vectors as averages of patent embeddings over the past 12 and 60 months. The vector $$\vec{\Delta_{12-60}}$$ represents the direction in embedding space where innovation concentration is growing.   
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/acafd219-1b74-4f38-aa78-e0085fb466c2" alt="embed_space" />
+  <img src="https://github.com/user-attachments/assets/acafd219-1b74-4f38-aa78-e0085fb466c2" alt="embed_space" width="50%" />
 </p>
 
 
