@@ -18,7 +18,7 @@ To identify monthly innovation trends, I calculate the difference between $$\vec
 
 Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding $$\vec{patent}$$, and $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$ are shown in dark vectors as averages of patent embeddings over the past 12 and 60 months. The vector $$\vec{\Delta_{12-60}}$$ represents the direction in embedding space where innovation concentration is growing.   
 
-![boxplot_turnover](https://github.com/user-attachments/assets/e507dfd6-900d-460d-b902-4ceabadc5858)
+
 
 # Breakdown of Innovation Trends (using Retrieval-Augmented Generation (RAG))
 So far I have constructed innovation trends which are vectors in the embedding space, but how how to interpret these vectors? are there technologies associated with innovation trends? To investigate this, I identify and summarize the patents most similar to innovation trends in the embedding space. This demonstrates the set of technological domains discussed in the patents associated with innovation trends. For example, I can describe the innovation trend in month 't' by finding the top 5% of patents by Cosine similarity $$\[
