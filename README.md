@@ -49,7 +49,7 @@ I hypothesize that the degree of the patent's relevance to recent innovation tre
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b1062542-bc62-46d0-b58a-b7bc566546fc" alt="turnover_box_plot" />
+  <img src="https://github.com/user-attachments/assets/5c8ceb6d-74ed-489b-a61b-0206a857c8a8" alt="boxplot_turnover" />
 </p>
 
 ### References
