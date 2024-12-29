@@ -25,7 +25,7 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 
 # Breakdown of Innovation Trends (using Retrieval-Augmented Generation (RAG))
 So far I have constructed innovation trends which are vectors in the embedding space, but how how to interpret these vectors? are there technologies associated with innovation trends? To investigate this, I identify and summarize the patents most similar to innovation trends in the embedding space. This demonstrates the set of technological domains discussed in the patents associated with innovation trends. For example, I can describe the innovation trend in month 't' by finding the top 5% of patents by Cosineine similarity $$\[
-\Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
+Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$. To automate reading the patents, I prompt LLMs to to do so. LLMs retrieve the name and description of technological domains mentioned in most similar patents to $$\vec{\Delta_{12-60}}$$. This is essentially a RAG method that rely on temporal trends in vector embedding space to retrieve pieces of context (patent) with most relevance to emerging trends.  
 
 The code in 'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. Below is the example of brief reports for the month of January 2023:
