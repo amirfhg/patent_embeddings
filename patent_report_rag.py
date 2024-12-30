@@ -57,7 +57,7 @@ Your answer should include "Summary of innovations for year-month {target_year_m
 Request: {{request}}
 """
 
-req = "Describe the general areas of innovation related to the patents in the context provided"
+req = "Based on the patents in the context provided, describe the general areas of innovation/technology and their application in the real world."
 prompt = PromptTemplate(input_variables=["request", "context"], template=template)
 
 # Create the LangChain processing chain
