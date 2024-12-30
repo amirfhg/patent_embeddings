@@ -11,6 +11,8 @@ nltk.download('stopwords', quiet=True)
 from nltk.corpus import stopwords
 from nltk.util import ngrams
 from collections import Counter
+
+
 # all_g_patents is the .csv file containing all the granted patents' abstracts owned by US public companies from 1970-2024
 # all_g_patents is available here 'https://drive.google.com/file/d/1rASRTCKwMOoT6ec0HgiBra8M7wphnkA1/view?usp=sharing' (Original data obtained from PatentsView)
 df = pd.read_csv('./all_g_patents.csv')
