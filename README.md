@@ -26,7 +26,9 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 # Breakdown of Innovation Trends (using Retrieval-Augmented Generation (RAG))
 So far I have constructed innovation trends which are vectors in the embedding space, but how how to interpret these vectors? are there technologies associated with innovation trends? To investigate this, I identify and summarize the patents most similar to innovation trends in the embedding space. This demonstrates the set of technological domains discussed in the patents associated with innovation trends. For example, I can describe the innovation trend in month 't' by finding the top 5% of patents by Cosine similarity $$\[
 Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
-\]$$. To automate reading the patents, I prompt LLMs to to do so. LLMs retrieve the name and description of technological domains mentioned in most similar patents to $$\vec{\Delta_{12-60}}$$. This is essentially a RAG method that rely on temporal trends in vector embedding space to retrieve pieces of context (patent) with most relevance to emerging trends.  
+\]$$. To automate reading the patents, I prompt LLMs to to do so. LLMs retrieve the name and description of technological domains mentioned in most similar patents to $$\vec{\Delta_{12-60}}$$. This is essentially a RAG method that rely on temporal trends in vector embedding space to retrieve pieces of context (patents) with most relevance to emerging trends. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on my methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering out 95% of less aligned (relevant) patents based on $$\[
+Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
+\]$$. This reduces the noise and improves the relevance and interpretability in LLM's response. 
 
 The code in 'patent_report_rag.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. 
 Below is the example of brief reports for January 2023 generated using RAG:
@@ -53,14 +55,9 @@ Below is the example of brief reports for January 2023 generated using RAG:
 >
 > 9. **Trace Data Management**: Efficient handling and storage of trace data improve system monitoring and debugging processes, essential for maintaining the performance and reliability of complex software systems.
 
+According to LLM's response, we can see that technologies with applications in areas like data center solutions and augmented reality are most aligned with $$\vec{\Delta_{12-60}}$$ calculated for January 2023. 
 
-
-
-Alternatively, one can rely on LLM's ability to read patents and identify innovation trends as a complement to the methodology discussed above. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on my methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering out 95% of less aligned (relevant) patents based on $$\[
-Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
-\]$$. This reduces the noise and improves the relevance and interpretability in LLM's response.
-
-To implement this, I first collect the innovation reports for multiple months during a period (e.g. Jan-Dec 2023) produced by gpt-4o. Then I prompt the model to read the reports and describe possible innovation themes emerging over that period. Below is an example of such report for the year 2023: 
+The method above can also be used to find innovation themes that are emerging over a period of a year or more and the potential future trajectory of these innovations. To illustrate this for the year 2023, I first collect the innovation reports for multiple months during the period (e.g. Jan-Dec 2023) produced by gpt-4o using the RAG method discussed above. Then I prompt the model to read the reports generated in the first stage (stage above) and describe possible innovation themes emerging over that period. Here is an example of such a report for the year 2023: 
 
 ""
 
