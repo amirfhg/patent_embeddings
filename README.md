@@ -24,9 +24,12 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 
 
 # Breakdown of Innovation Trends (using Retrieval-Augmented Generation (RAG))
+
 So far I have constructed innovation trends which are vectors in the embedding space, but how how to interpret these vectors? are there technologies associated with innovation trends? To investigate this, I identify and summarize the patents most similar to innovation trends in the embedding space. This demonstrates the set of technological domains discussed in the patents associated with innovation trends. For example, I can describe the innovation trend in month 't' by finding the top 5% of patents by Cosine similarity $$\[
 Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
-\]$$. To automate reading the patents, I prompt LLMs to to do so. LLMs retrieve the name and description of technological domains mentioned in most similar patents to $$\vec{\Delta_{12-60}}$$. This is essentially a RAG method that rely on temporal trends in vector embedding space to retrieve pieces of context (patents) with most relevance to emerging trends. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on my methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering out 95% of less aligned (relevant) patents based on $$\[
+\]$$. 
+
+To automate reading the patents, I prompt LLMs to to do so. LLMs retrieve the name and description of technological domains mentioned in most similar patents to $$\vec{\Delta_{12-60}}$$. This is essentially a RAG method that rely on temporal trends in vector embedding space to retrieve pieces of context (patents) with most relevance to emerging trends. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on my methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering out 95% of less aligned (relevant) patents based on $$\[
 Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$. This reduces the noise and improves the relevance and interpretability in LLM's response. 
 
