@@ -28,9 +28,21 @@ So far I have constructed innovation trends which are vectors in the embedding s
 Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$. To automate reading the patents, I prompt LLMs to to do so. LLMs retrieve the name and description of technological domains mentioned in most similar patents to $$\vec{\Delta_{12-60}}$$. This is essentially a RAG method that rely on temporal trends in vector embedding space to retrieve pieces of context (patent) with most relevance to emerging trends.  
 
-The code in 'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. Below is the example of brief reports for the month of January 2023:
+The code in 'innovation_trend.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. Below is the example of brief reports for January 2023:
 
-""
+"Summary of innovations for year-month 2023-01 are:
+
+1. **Data Management and Storage**: Innovations include efficient data parity techniques, memory system operations like cache synchronization and garbage collection, and methods for managing memory tiers and zones. There are also advancements in memory device configurations, such as using different modes of operation and optimizing memory access parameters.
+
+2. **Display Technology**: Developments in display devices focus on pixel arrangement and driving methods to enhance color accuracy and efficiency.
+
+3. **Database and Data Processing**: Innovations include near-memory database accelerators to improve performance, dynamic data warehouse management, and methods for processing table data with version control.
+
+4. **Data Synchronization and Replication**: Techniques for persistent inflight tracking of operations in storage solutions and triggering pipeline execution based on data changes are highlighted.
+
+5. **Image and Video Processing**: Methods for dynamically updating image display settings based on sensor input and generating video content segments using user input are described.
+
+6. **Trace Data Management**: Techniques for managing and storing trace data spans and timestamps in data stores are introduced."
 
 Alternatively, one can rely on LLM's ability to read patents and identify innovation trends as a complement to the methodology discussed above. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on my methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering out 95% of less aligned (relevant) patents based on $$\[
 Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
