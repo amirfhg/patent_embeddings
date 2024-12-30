@@ -33,8 +33,6 @@ Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 The code in 'patent_report_rag.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. 
 Below is the example of brief reports for January 2023 generated using RAG:
 
-# Summary of Innovations for January 2023
-
 > **Summary of innovations for year-month 2023-01 are:**
 >
 > 1. **Data Management and Storage**: Innovations focus on efficient data parity, memory management, and data migration across different memory tiers. These technologies improve data integrity, storage efficiency, and performance in memory systems, which are crucial for data centers and cloud storage solutions.
@@ -55,7 +53,7 @@ Below is the example of brief reports for January 2023 generated using RAG:
 >
 > 9. **Trace Data Management**: Efficient handling and storage of trace data improve system monitoring and debugging processes, essential for maintaining the performance and reliability of complex software systems.
 
-According to LLM's response, we can see that technologies with applications in areas like data center solutions and augmented reality are most aligned with $$\vec{\Delta_{12-60}}$$ calculated for January 2023. 
+According to LLM's response above, we can see that technologies with applications in areas like data center solutions and augmented reality are most aligned with $$\vec{\Delta_{12-60}}$$ calculated for January 2023. 
 
 The method above can also be used to find innovation themes that are emerging over a period of a year or more and the potential future trajectory of these innovations. To illustrate this for the year 2023, I first collect the innovation reports for multiple months during the period (e.g. Jan-Dec 2023) produced by gpt-4o using the RAG method discussed above. Then I prompt the model to read the reports generated in the first stage (stage above) and describe possible innovation themes emerging over that period. Here is an example of such a report for the year 2023: 
 
