@@ -46,6 +46,8 @@ Below is the example of brief reports for January 2023 generated using RAG:
 > 6. _**Trace Data Management**: Techniques for managing and storing trace data spans and timestamps in data stores are introduced._
 
 
+
+
 Alternatively, one can rely on LLM's ability to read patents and identify innovation trends as a complement to the methodology discussed above. This way the model's response benefits from focusing on the content of a carefully selected set of patents -- among hundreds of thousands of patents -- based on my methodology. The aim here is to improve LLM's ability to identify emerging innovation hotspots by filtering out 95% of less aligned (relevant) patents based on $$\[
 Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$. This reduces the noise and improves the relevance and interpretability in LLM's response.
