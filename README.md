@@ -31,19 +31,27 @@ Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 The code in 'patent_report_rag.py' implements this idea by first calculating innovation trends for every month, finding most similar patents to it, and using RAG prompt gpt-4o to produce innovation trend reports based on those patents. 
 Below is the example of brief reports for January 2023 generated using RAG:
 
-> _Summary of innovations for year-month 2023-01 are:_
+# Summary of Innovations for January 2023
+
+> **Summary of innovations for year-month 2023-01 are:**
 >
-> 1. _**Data Management and Storage**: Innovations include efficient data parity techniques, memory system operations like cache synchronization and garbage collection, and methods for managing memory tiers and zones. There are also advancements in memory device configurations, such as using different modes of operation and optimizing memory access parameters._
+> 1. **Data Management and Storage**: Innovations focus on efficient data parity, memory management, and data migration across different memory tiers. These technologies improve data integrity, storage efficiency, and performance in memory systems, which are crucial for data centers and cloud storage solutions.
 >
-> 2. _**Display Technology**: Developments in display devices focus on pixel arrangement and driving methods to enhance color accuracy and efficiency._
+> 2. **Display Technology**: Advances in display devices involve optimizing pixel arrangements and driving mechanisms to enhance image quality and power efficiency. This is applicable in consumer electronics like TVs, monitors, and smartphones.
 >
-> 3. _**Database and Data Processing**: Innovations include near-memory database accelerators to improve performance, dynamic data warehouse management, and methods for processing table data with version control._
+> 3. **Memory Systems**: Techniques for memory operation optimization, including maintenance command interfaces and memory access parameter tuning, aim to enhance memory performance and reliability. These are vital for improving the speed and efficiency of computing devices.
 >
-> 4. _**Data Synchronization and Replication**: Techniques for persistent inflight tracking of operations in storage solutions and triggering pipeline execution based on data changes are highlighted._
+> 4. **Database and Data Processing**: Innovations include near-memory database accelerators and dynamic data processing in multi-cluster warehouses. These technologies aim to handle large data volumes more efficiently, benefiting industries relying on big data analytics and real-time data processing.
 >
-> 5. _**Image and Video Processing**: Methods for dynamically updating image display settings based on sensor input and generating video content segments using user input are described._
+> 5. **Image Systems**: Dynamic updating of drive sequences based on sensor input enhances display performance and adaptability, applicable in devices requiring high-quality visual output, such as augmented reality systems.
 >
-> 6. _**Trace Data Management**: Techniques for managing and storing trace data spans and timestamps in data stores are introduced._
+> 6. **Data Synchronization and Replication**: Persistent inflight tracking and data synchronization across storage clusters ensure data consistency and reliability, important for disaster recovery and data backup solutions.
+>
+> 7. **Legal Compliance in Data Transfer**: Methods for handling data with legal restrictions ensure compliance during data transfer processes, crucial for industries dealing with sensitive information, such as finance and healthcare.
+>
+> 8. **Video Content Generation**: Techniques for generating video content based on user input can be used in media production and interactive entertainment, allowing for personalized content creation.
+>
+> 9. **Trace Data Management**: Efficient handling and storage of trace data improve system monitoring and debugging processes, essential for maintaining the performance and reliability of complex software systems.
 
 
 
