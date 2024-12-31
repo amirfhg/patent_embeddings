@@ -3,8 +3,7 @@ I track innovation trends and technological breakthroughs through patent embeddi
 I also establish that there is a link between innovation trends and patent value. 
 
 # Embedding Technique 
-I use sentence transformers (HuggingFace model "all-mpnet-base-v2") to vectorize the title and abstract of US public companies granted patents. 
-The result is a vector database of hundreds of thousands of patents, each being a 768-dimensional vector in embedding space. 
+I use sentence transformers (HuggingFace model "all-mpnet-base-v2") to vectorize the title and abstract of US public companies granted patents. Granted patent data, including abstracts, are collected from PatentsView at https://patentsview.org/download/data-download-tables. The result is a vector database of hundreds of thousands of patents, each being a 768-dimensional vector in embedding space. 
 
 The code in 'vectorize_patent_abstract.py' shows how I vectorize patent  abstracts in the sample. 
 
