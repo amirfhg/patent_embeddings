@@ -96,6 +96,11 @@ Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
   <img src="https://github.com/user-attachments/assets/5c8ceb6d-74ed-489b-a61b-0206a857c8a8" alt="boxplot_turnover" width="50%" />
 </p>
 
+The table below reports the result from a pooling panel regression with the dependent variable as the log of turnover of day 0 (same day as patent grant news). The results clearly indicate that cosine similarity of a patent with $$\vec{\Delta_{12-60}}$$ is a strong predictor of market response to the news of patent being granted. Note that $$\[
+Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
+\]$$ is calculated and available at the time of patent filing which is always before the grant date. So this measure of patent alignment with innovation trend is a predictor of future market response to the news of the patent being granted. The size of the coefficient in the last specification suggests that one standard deviation increase in $$\[
+Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
+\]$$ at the patent level predicts an average of 6.2% increase in market response to the news of the patent grant. Therefore the results are both statistically and economically signifcant. 
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/8e345e67-377e-4b26-aa62-651cce296db0" alt="patent_table" width="50%" />
