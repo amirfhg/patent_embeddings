@@ -98,9 +98,8 @@ Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/d145486c-e7d9-4ec5-b37a-3d0b2f517ffb" alt="patent_table" width="50%" />
+  <img src="https://github.com/user-attachments/assets/8e345e67-377e-4b26-aa62-651cce296db0" alt="patent_table" width="50%" />
 </div>
-
 
 
 ### References
