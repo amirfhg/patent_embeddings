@@ -96,6 +96,10 @@ Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
   <img src="https://github.com/user-attachments/assets/5c8ceb6d-74ed-489b-a61b-0206a857c8a8" alt="boxplot_turnover" width="50%" />
 </p>
 
+
+![patent_table](https://github.com/user-attachments/assets/d145486c-e7d9-4ec5-b37a-3d0b2f517ffb)
+
+
 ### References
 
 Kogan, Leonid, Papanikolaou, Dimitris, Seru, Amit, and Stoffman, Noah. (2017). 
