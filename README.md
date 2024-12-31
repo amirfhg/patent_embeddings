@@ -36,23 +36,14 @@ The code in 'patent_report_rag.py' implements this idea by first calculating inn
 Below is the example of brief reports for January 2023 generated using RAG:
 
 > **Summary of innovations for year-month 2023-01 are:**
->
 > 1. **Data Management and Storage**: Innovations focus on efficient data parity, memory management, and data migration across different memory tiers. These technologies improve data integrity, storage efficiency, and performance in memory systems, which are crucial for data centers and cloud storage solutions.
->
 > 2. **Display Technology**: Advances in display devices involve optimizing pixel arrangements and driving mechanisms to enhance image quality and power efficiency. This is applicable in consumer electronics like TVs, monitors, and smartphones.
->
 > 3. **Memory Systems**: Techniques for memory operation optimization, including maintenance command interfaces and memory access parameter tuning, aim to enhance memory performance and reliability. These are vital for improving the speed and efficiency of computing devices.
->
 > 4. **Database and Data Processing**: Innovations include near-memory database accelerators and dynamic data processing in multi-cluster warehouses. These technologies aim to handle large data volumes more efficiently, benefiting industries relying on big data analytics and real-time data processing.
->
 > 5. **Image Systems**: Dynamic updating of drive sequences based on sensor input enhances display performance and adaptability, applicable in devices requiring high-quality visual output, such as augmented reality systems.
->
 > 6. **Data Synchronization and Replication**: Persistent inflight tracking and data synchronization across storage clusters ensure data consistency and reliability, important for disaster recovery and data backup solutions.
->
 > 7. **Legal Compliance in Data Transfer**: Methods for handling data with legal restrictions ensure compliance during data transfer processes, crucial for industries dealing with sensitive information, such as finance and healthcare.
->
 > 8. **Video Content Generation**: Techniques for generating video content based on user input can be used in media production and interactive entertainment, allowing for personalized content creation.
->
 > 9. **Trace Data Management**: Efficient handling and storage of trace data improve system monitoring and debugging processes, essential for maintaining the performance and reliability of complex software systems.
 
 According to LLM's response above, we can see that technologies with applications in areas like data center solutions and augmented reality are most aligned with $$\vec{\Delta_{12-60}}$$ calculated for January 2023. 
@@ -66,6 +57,7 @@ The method above can also be used to find innovation themes that are emerging ov
 > 4. **Cloud Computing and Distributed Systems**: There is a continuous emphasis on improving cloud infrastructure, data management, and distributed storage systems. Innovations in this area aim to enhance data availability, disaster recovery, and system resilience.
 > 5. **Database and Data Management**: Throughout the year, there are advancements in database management, including query optimization and data consistency checks, which are vital for efficient data handling.
 > 6. **Display Technology**: Although not as frequent as other themes, display technology innovations appear multiple times, focusing on improving visual quality and energy efficiency in electronic devices.
+>    
 > The trajectory of innovations in the future is likely to continue focusing on these themes, with an increasing emphasis on enhancing efficiency, reliability, and scalability. As technology demands grow, we can expect further advancements in memory and data management, particularly in areas like artificial intelligence, machine learning, and real-time data processing. Additionally, innovations in energy efficiency and environmental adaptability will likely become more prominent as sustainability becomes a critical concern in technology development.
 
 
