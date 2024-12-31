@@ -60,19 +60,12 @@ According to LLM's response above, we can see that technologies with application
 The method above can also be used to find innovation themes that are emerging over a period of a year or more and the potential future trajectory of these innovations. To illustrate this for the year 2022, I first collect the innovation reports for multiple months during the period (e.g. Jan-Dec 2022) produced by gpt-4o using the RAG method discussed above. Then I prompt the model to read the reports generated in the first stage (stage above) and describe possible innovation themes emerging over that period. Here is an example of such a report for the year 2022: 
 
 > Based on the information provided, several innovation themes are persistent over the period from January to December 2022. These recurring themes include:
->
 > 1. **Memory Management and Optimization**: Throughout the year, there are consistent innovations aimed at improving memory efficiency, reliability, and performance. This includes techniques for error detection and correction, memory access optimization, and power management.
->
 > 2. **Data Storage and Retrieval**: Innovations in data storage systems, including methods for data redundancy, efficient data retrieval, and storage optimization, are a constant focus. These are crucial for enhancing the performance and reliability of storage solutions.
->
 > 3. **Error Detection and Correction**: Techniques for maintaining data integrity through error detection and correction are repeatedly highlighted. This is essential for ensuring data accuracy and system stability across various applications.
->
 > 4. **Cloud Computing and Distributed Systems**: There is a continuous emphasis on improving cloud infrastructure, data management, and distributed storage systems. Innovations in this area aim to enhance data availability, disaster recovery, and system resilience.
->
 > 5. **Database and Data Management**: Throughout the year, there are advancements in database management, including query optimization and data consistency checks, which are vital for efficient data handling.
->
 > 6. **Display Technology**: Although not as frequent as other themes, display technology innovations appear multiple times, focusing on improving visual quality and energy efficiency in electronic devices.
->
 > The trajectory of innovations in the future is likely to continue focusing on these themes, with an increasing emphasis on enhancing efficiency, reliability, and scalability. As technology demands grow, we can expect further advancements in memory and data management, particularly in areas like artificial intelligence, machine learning, and real-time data processing. Additionally, innovations in energy efficiency and environmental adaptability will likely become more prominent as sustainability becomes a critical concern in technology development.
 
 
