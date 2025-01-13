@@ -21,7 +21,7 @@ To construct innovation trends, we first create vectors whose orientations repre
 
 $$\vec{\Delta_{t, k}} = \vec{c_{t - k, t}} - \vec{c_{0, t}}$$
 
-Where $\vec{c_{t - k, t}$ represents the average embeddings of more recent patents, while $$\vec{c_{0, t}}$$ serves as the reference period, containing embeddings of all patents. $$\vec{\Delta_{t, k}}$$ captures emerging innovations by measuring shifts in vector orientation in the embedding space, comparing the direction of recent patents to the average direction of all patents.
+Where $$\vec{c_{t - k, t}}$$ represents the average embeddings of more recent patents, while $$\vec{c_{0, t}}$$ serves as the reference period, containing embeddings of all patents. $$\vec{\Delta_{t, k}}$$ captures emerging innovations by measuring shifts in vector orientation in the embedding space, comparing the direction of recent patents to the average direction of all patents.
 
 Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding $$\vec{patent}$$, and the centroid vectors are shown in dark as averages of patent embeddings over different periods. The vector $$\vec{\Delta_{t, k}}$$ represents the orientation of emerging innovation areas.   
 
