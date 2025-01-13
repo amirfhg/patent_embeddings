@@ -15,7 +15,6 @@ Vector orientation in embedding space can correspond to a specific domain of inn
   <img src="https://github.com/user-attachments/assets/21117d70-6622-42fc-8c77-7cffdbe41172" alt="pca_table">
 </div>
 
-
 # Innovation Trends 
 To construct innovation trends, we first create vectors whose orientations represent the primary innovation domains for a given period. These vectors, known as centroids, are the average of the vector embeddings for patents filed during that period. Centroids indicate the primary domains of innovation, as a greater number of patents filed in specific domains result in higher average values for the embedding dimensions associated with those domains. For every month $t$, the centroid over the past $k$ months is the average of vector embeddings over $N$ patents filed in the period $[t-k, t)$. As new patents are filed over time, the orientation of centroids in embedding space shifts. We posit that this shift in the orientation of centroid vectors captures the trajectory of emerging innovations.  We select a period $[t-k, t)$ and define the innovation trend for month $t$ as follows: 
 
@@ -29,11 +28,7 @@ Below is a simplified illustration of embedding space in three dimensions. The v
   <img src="https://github.com/user-attachments/assets/b4e87741-2fe9-4c34-8dcc-59830aef504c" alt="embed_space" width="50%">
 </div>
 
-To identify monthly innovation trends, I calculate the difference between $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$, representing the average embeddings in the past 12 and 60 months. These values are arbitrary but the idea is that $$\vec{centroid_{12}}$$ represents a more recent set of patents in the innovation space compared to $$\vec{centroid_{60}}$$ and the difference between the two reveals the dimensions/direction that receive more attention in the embedding space. I produce the results with other periods besides 12 and 60 months to ensure the validity of my methodology. 
-
-Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding $$\vec{patent}$$, and $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$ are shown in dark vectors as averages of patent embeddings over the past 12 and 60 months. The vector $$\vec{\Delta_{12-60}}$$ represents the direction in embedding space where innovation concentration is growing.   
-
-
+To identify monthly innovation trends, I calculate the difference between $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$, representing the average embeddings in the past 12 and 60 months. These values are arbitrary but the idea is that $$\vec{centroid_{12}}$$ represents a more recent set of patents in the innovation space compared to $$\vec{centroid_{60}}$$. I produce the results with other periods besides 12 and 60 months to ensure the validity of my methodology. 
 
 # Breakdown of Innovation Trends (using Retrieval-Augmented Generation (RAG))
 
