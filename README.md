@@ -17,11 +17,10 @@ Vector orientation in embedding space can correspond to a specific domain of inn
 
 
 # Innovation Trends 
-To construct innovation trends, we first create vectors whose orientations represent the primary innovation domains for a given period. These vectors, known as centroids, are the average of the vector embeddings for patents filed during that period. Centroids indicate the primary domains of innovation, as a greater number of patents filed in specific domains result in higher average values for the embedding dimensions associated with those domains. For every month $t$, the centroid over the past $k$ months is the average of vector embeddings over $N$ patents filed in the period $[t-k,\,t)$:
+To construct innovation trends, we first create vectors whose orientations represent the primary innovation domains for a given period. These vectors, known as centroids, are the average of the vector embeddings for patents filed during that period. Centroids indicate the primary domains of innovation, as a greater number of patents filed in specific domains result in higher average values for the embedding dimensions associated with those domains. For every month $t$, the centroid over the past $k$ months is the average of vector embeddings over $N$ patents filed in the period $[t-k, t)$:
 
-$$\[
-\vec{c}_{(t-k, t)} = \frac{1}{N} \sum_{j=1}^{N} \vec{p}_{j, \tau}, \quad \text{for } \tau \in [t-k, t)
-\]$$
+![Equation](https://latex.codecogs.com/png.latex?%5Cvec%7Bc%7D_%7B%28t-k%2C%5C%2C%20t%29%7D%20%3D%20%5Cfrac%7B1%7D%7BN%7D%20%5Csum_%7Bj%20%3D%201%7D%5EN%20%5Cvec%7Bp%7D_%7Bj%2C%20%5Ctau%7D%2C%20%5Cquad%20%5Cscriptstyle%20for%5C%2C%5C%2C%20%5Ctau%20%5Cin%20%5B%5Ct-k%2C%5C%2Ct%29)
+
 
 To identify monthly innovation trends, I calculate the difference between $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$, representing the average embeddings in the past 12 and 60 months. These values are arbitrary but the idea is that $$\vec{centroid_{12}}$$ represents a more recent set of patents in the innovation space compared to $$\vec{centroid_{60}}$$ and the difference between the two reveals the dimensions/direction that receive more attention in the embedding space. I produce the results with other periods besides 12 and 60 months to ensure the validity of my methodology. 
 
@@ -33,7 +32,7 @@ Below is a simplified illustration of embedding space in three dimensions. The v
 
 # Breakdown of Innovation Trends (using Retrieval-Augmented Generation (RAG))
 
-So far I have constructed innovation trends which are vectors in the embedding space, but how how to interpret these vectors? are there technologies associated with innovation trends? To investigate this, I identify and summarize the patents most similar to innovation trends in the embedding space. This demonstrates the set of technological domains discussed in the patents associated with innovation trends. For example, I can describe the innovation trend in month 't' by finding the top 5% of patents by Cosine similarity $$\[
+So far I have constructed innovation trends which are vectors in the embedding space, but how how to interpret these vectors? are there technologies associated with innovation trends? To investigate this, I identify and summarize the patents most similar to innovation trends in the embedding space. This demonstrates the set of technological domains discussed in the patents associated with innovation trends. For example, I can describe the innovation trend in the month 't' by finding the top 5% of patents by Cosine similarity $$\[
 Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$. 
 
