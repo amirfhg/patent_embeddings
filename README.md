@@ -26,7 +26,7 @@ Where $$\vec{c_{t - k, t}}$$ represents the average embeddings of more recent pa
 Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding $$\vec{patent}$$, and the centroid vectors are shown in dark as averages of patent embeddings over different periods. The vector $$\vec{\Delta_{t, k}}$$ represents the orientation of emerging innovation areas.   
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/b4e87741-2fe9-4c34-8dcc-59830aef504c" alt="embed_space">
+  <img src="https://github.com/user-attachments/assets/b4e87741-2fe9-4c34-8dcc-59830aef504c" alt="embed_space" width="50%">
 </div>
 
 To identify monthly innovation trends, I calculate the difference between $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$, representing the average embeddings in the past 12 and 60 months. These values are arbitrary but the idea is that $$\vec{centroid_{12}}$$ represents a more recent set of patents in the innovation space compared to $$\vec{centroid_{60}}$$ and the difference between the two reveals the dimensions/direction that receive more attention in the embedding space. I produce the results with other periods besides 12 and 60 months to ensure the validity of my methodology. 
