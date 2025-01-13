@@ -11,7 +11,10 @@ The code in 'vectorize_patent_abstract.py' shows how I vectorize patent  abstrac
 Vector orientation in embedding space can correspond to a specific domain of innovation (although not all dimensions may be interpretable). 
  To demonstrate that orientations in embedding space represent domains of innovation, I apply PCA to reduce the dimensionality of embedding space and identify the axes along which the largest source of variation in the patent data is captured. Then I identify patents most aligned with these principal components and analyze their content to determine the corresponding innovation domains. The table below presents the innovation domain corresponding to the top three principal components from PCA applied on patents clustered every five years. I apply PCA every five years to demonstrate the shifts in innovation domains over time. 
 
-![pca_table](https://github.com/user-attachments/assets/21117d70-6622-42fc-8c77-7cffdbe41172)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/21117d70-6622-42fc-8c77-7cffdbe41172" alt="pca_table">
+</div>
+
 
 # Innovation Trends 
 The main idea is that the variations in the direction of centroids -- vectors representing the average of patent vector embeddings -- over time can reveal the newly emerging areas of innovation. $$centroid_t$$ is the vector that is the average of vector embeddings of patents filed in the last 't' months. I study the variations in this centroid over different periods to identify the changes in the theme of patents filed over time. 
