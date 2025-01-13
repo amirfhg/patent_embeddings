@@ -21,14 +21,16 @@ To construct innovation trends, we first create vectors whose orientations repre
 
 $$\vec{\Delta_{t, k}} = \vec{c_{t - k, t}} - \vec{c_{0, t}}$$
 
+Where $\vec{c_{t - k, t}$ represents the average embeddings of more recent patents, while $\vec{c_{0, t}$ serves as the reference period, containing embeddings of all patents. $\vec{\Delta_{t, k}}$ captures emerging innovations by measuring shifts in vector orientation in the embedding space, comparing the direction of recent patents to the average direction of all patents.
+
+Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding $$\vec{patent}$$, and the centroid vectors are shown in dark as averages of patent embeddings over different periods. The vector $$\vec{\Delta_{t, k}}$$ represents the orientation of emerging innovation areas.   
+
 
 To identify monthly innovation trends, I calculate the difference between $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$, representing the average embeddings in the past 12 and 60 months. These values are arbitrary but the idea is that $$\vec{centroid_{12}}$$ represents a more recent set of patents in the innovation space compared to $$\vec{centroid_{60}}$$ and the difference between the two reveals the dimensions/direction that receive more attention in the embedding space. I produce the results with other periods besides 12 and 60 months to ensure the validity of my methodology. 
 
 Below is a simplified illustration of embedding space in three dimensions. The vectors in gray are each patent's embedding $$\vec{patent}$$, and $$\vec{centroid_{12}}$$ and $$\vec{centroid_{60}}$$ are shown in dark vectors as averages of patent embeddings over the past 12 and 60 months. The vector $$\vec{\Delta_{12-60}}$$ represents the direction in embedding space where innovation concentration is growing.   
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/b4e87741-2fe9-4c34-8dcc-59830aef504c" alt="embed_space">
-</div>
+
 
 # Breakdown of Innovation Trends (using Retrieval-Augmented Generation (RAG))
 
