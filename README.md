@@ -96,7 +96,7 @@ Cosine(\vec{\text{patent}}, \vec{\Delta_{12-60}})
 \]$$ at the patent level predicts an average of 6.2% increase in market response to the news of the patent grant. Therefore the results are both statistically and economically signifcant. 
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/8e345e67-377e-4b26-aa62-651cce296db0" alt="patent_table" width="50%" />
+  <img src="https://github.com/user-attachments/assets/6a26edec-9fee-424b-a481-f707479a2f9d" alt="patent_table" width="50%">
 </div>
 
 
